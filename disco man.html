@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <section>
+      <img class="mySlides" src="https://images3.alphacoders.com/658/658610.jpg" style="height:750px;">
+      <img class="mySlides" src="https://www.cairco.org/sites/default/files/images/humor/banana-republic.jpg" style="height:750px;">
+      <img class="mySlides" src="https://thumbs.dreamstime.com/b/humorous-banana-policeman-character-cheerful-expression-yellow-dressed-as-complete-police-hat-big-smile-set-against-361937066.jpg" style="height:750px;">
+      <img class="mySlides" src="https://cdn.printerval.com/sticker/960x960/sticker-kisscut-transparent,transparent,sprv1-1038581885,fff.jpeg" style="height:750px;">
+      <img class="mySlides" src="https://ogimgs.soundinstants.com/eyJ0aXRsZSI6IkJhbmFuYSBHdWFyZHMgLSBBbWJ1bGFuY2UiLCJjb2xvciI6ICJkYXJrLWdyYXkifQ==/banana-guards-ambulance" style="height:750px;">
+    </section>
+    <script>
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+    </script>
+  </body>
+</html>
